@@ -6,8 +6,8 @@ from flask import Flask, redirect, url_for, request, render_template, session
 import os, uuid, json, requests
 
 
-# from dotenv import load_dotenv
-# load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
 
 
 app = Flask (__name__)
@@ -20,14 +20,9 @@ def home():
 def helloWorld():
     imageSelected = request.form['ImageSelected']
 
-    # key = os.environ['KEY']
-    # endpoint = os.environ['ENDPOINT']
-    # location = os.environ['LOCATION']
-
-    key = "8a54f9fab78f41929264d9581a0d0e22"
-    endpoint = "https://colour-palette.cognitiveservices.azure.com/"
-    # endpoint = "https://westeurope.api.cognitive.microsoft.com/"
-    location = "westeurope"
+    key = os.environ['KEY']
+    endpoint = os.environ['ENDPOINT']
+    location = os.environ['LOCATION']
 
     path = '/vision/v3.1/analyze'
     constructedURL = endpoint + path
