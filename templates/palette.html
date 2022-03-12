@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Colour Palette</h2>
+        <div>
+            <strong>Results</strong> {{ analysis_response }}
+            <img src="{{ImageSelected}}" alt="" srcset="">
+        </div>
+        <div>
+            <strong>Dominant Colours:</strong> {{ dominantCOLOURS }}
+        </div>
+        <div>
+            <strong>Accent Colour:</strong> {{ accentCOLOUR }}
+        </div>
+        <div>
+            <strong>Is the image Black & White:</strong> {{ blackWHITE }}
+        </div>
+
+        <div>
+            <strong>Try another image</strong>
+            <a href="/"><button>New Image</button></a>
+        </div>
+    </div>
+</body>
+</html>
