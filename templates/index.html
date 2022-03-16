@@ -8,14 +8,14 @@
     <title>Colour Pallette</title>
 </head>
 <body>
-    <h1>Colour Palette Picker from Image</h1>
+    <h1>Colour Picker from Image</h1>
 
     <form class="container" id="form1" method="POST" >
-      <label for="imageURL">URL of the image</label><br />
-      <input type="url" name="ImageSelected" id="">
-        <div class="row">
-          <input type="submit"  value="Generate Palette" />
-        </div>
+      <label for="imageURL" class="label">Paste Image URL</label><br />
+      <div class="formInput">
+        <input type="url" name="ImageSelected" placeholder="https://" id="">
+        <input type="submit" class="button" value="Generate Colour" />
+      </div>
       </form>
 </body>
 </html>
