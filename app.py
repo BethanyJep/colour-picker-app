@@ -48,4 +48,4 @@ def colourPicker():
         blackWHITE=analysis['color']['isBWImg']
     )
 
-app.run(debug=True)
+debug=True
