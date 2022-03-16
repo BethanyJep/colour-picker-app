@@ -1,6 +1,3 @@
-from azure.cognitiveservices.vision.computervision import ComputerVisionClient
-from azure.cognitiveservices.vision.computervision.models import VisualFeatureTypes
-from msrest.authentication import CognitiveServicesCredentials
 from flask import Flask, redirect, url_for, request, render_template, session
 
 import os, uuid, json, requests
