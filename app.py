@@ -1,3 +1,4 @@
+from distutils.log import debug
 from flask import Flask, redirect, url_for, request, render_template, session
 
 import os, uuid, json, requests
@@ -14,7 +15,7 @@ def home():
     return render_template("index.html")
 
 @app.route('/', methods=['POST'])
-def helloWorld():
+def colourPicker():
     imageSelected = request.form['ImageSelected']
 
     key = os.environ['KEY']
@@ -47,3 +48,4 @@ def helloWorld():
         blackWHITE=analysis['color']['isBWImg']
     )
 
+app.run(debug=True)
