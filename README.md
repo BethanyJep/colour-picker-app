@@ -1,1 +1,1 @@
-# Falsk Colour Palette App
+# Flask Colour Picker App
