@@ -1,6 +1,6 @@
 env
 ..env
-.env
+# .env
 _pycache_
 .github
 venv

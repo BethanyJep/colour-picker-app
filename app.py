@@ -47,5 +47,3 @@ def colourPicker():
         accentCOLOUR=analysis['color']['accentColor'],
         blackWHITE=analysis['color']['isBWImg']
     )
-
-debug=True
