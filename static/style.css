@@ -43,3 +43,20 @@ input{
     border: none;
     border-radius: 5px;
 }
+@media screen and (max-width: 720px) {
+    .imageResults {
+      display: flex;
+      flex-direction: column;
+      background-color: #dff5f4;
+      border-radius: 10px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .imageDesc{
+        padding-left: 15px;
+    }
+    img{
+        padding: 10px;
+        width: 90%;
+    }
+  }
