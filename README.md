@@ -8,10 +8,6 @@ A web-app colour picker to help you create the perfect brand colour that perfect
 ![App Screenshot](https://github.com/BethanyJep/colour-picker-app/blob/master/assets/screen-1.png?raw=true)
 ![App Screenshot](https://github.com/BethanyJep/colour-picker-app/blob/master/assets/screen-2.png?raw=true)
 ![App Screenshot](https://github.com/BethanyJep/colour-picker-app/blob/master/assets/screen-3.png?raw=true)
-
-## Installation
-
-
     
 ## Run Locally
 
