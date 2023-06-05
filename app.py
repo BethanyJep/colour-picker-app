@@ -1,7 +1,11 @@
 from distutils.log import debug
 from flask import Flask, redirect, url_for, request, render_template, session
-
 import os, uuid, json, requests
+import tkinter as tk
+from tkinter import filedialog
+import json
+import pytesseract
+from PIL import Image
 
 
 from dotenv import load_dotenv
@@ -13,6 +17,8 @@ app = Flask (__name__)
 @app.route("/", methods=["GET"])
 def home():
     return render_template("index.html")
+
+
 
 @app.route('/', methods=['POST'])
 def colourPicker():
@@ -47,3 +53,23 @@ def colourPicker():
         accentCOLOUR=analysis['color']['accentColor'],
         blackWHITE=analysis['color']['isBWImg']
     )
+
+def upload_image():
+    root = tk.Tk()
+    root.withdraw()
+    file_path = filedialog.askopenfilename()
+    return file_path
+
+def image_to_notes(file_path, notes_path):
+    # Load the image
+    image = Image.open(file_path)
+
+    # Extract text from the image using pytesseract
+    text = pytesseract.image_to_string(image)
+
+    # Open the JSON file for appending
+    with open(notes_path, "a") as notes_file:
+        # Append a new note object to the JSON file
+        note = {"file_path": file_path, "text": text}
+        json.dump(note, notes_file)
+        notes_file.write("\n")

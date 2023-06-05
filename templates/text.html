@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes to text</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Notes to text</h1>
+        <h2><strong>Here are your notes</strong> </h2>
+        <div class="imageResults">
+            <div>
+                <img src="{{ImageSelected}}" alt="" srcset="">
+            </div>
+            <div class="imageDesc">
+                <p><strong>Dominant Colours:</strong> {{ dominantCOLOURS }}</p>
+            </div>
+        </div>
+
+        <div>
+            <strong>Try another image: </strong>
+            <a href="/"><button class="button">New Image</button></a>
+        </div>
+    </div>
+</body>
+</html>
