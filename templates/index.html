@@ -11,20 +11,31 @@
 <body>
     <h1>Colour Picker from Image</h1>
 
-    <form class="container" id="form1" method="POST" >
+    <!-- <form class="container" id="form1" method="POST" >
       <label for="imageURL" class="label">Paste Image URL</label><br />
       <div class="formInput">
         <input type="url" name="ImageSelected" placeholder="https://" id="">
         <input type="submit" class="button" value="Generate Colour" />
       </div>
-      </form>
+    </form> -->
 
-      <h2>Image to Notes</h2>
+      <!-- <h2>Image to Notes</h2>
       <form action="/upload" method="POST" enctype="multipart/form-data">
         <label for="image">Select Image:</label>
         <input type="file" id="image" name="image">
         <br><br>
         <input type="submit" value="Upload">
+      </form> -->
+
+      <h1>Generate image from Prompt</h1>
+
+      <form class="container" id="form1" method="POST" >
+        <label for="prompt" class="label">Write your prompt</label><br />
+        <div class="formInput">
+          <input type="text" name="prompt" placeholder="generate a prompt for dalle e.g. a kitten sitting on grass" id="">
+          <input type="submit" class="button" value="Generate an image" />
+        </div>
       </form>
+
 </body>
 </html>
