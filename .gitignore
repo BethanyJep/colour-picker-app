@@ -4,6 +4,7 @@ env
 _pycache_
 .github
 venv
+.env
 newenv
 __pycache__
 node_modules
