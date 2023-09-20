@@ -1,4 +1,4 @@
-env
+.env
 ..env
 # .env
 _pycache_
@@ -10,3 +10,9 @@ __pycache__
 node_modules
 package-lock.json
 package.json
+
+# hide .env file (this file contains sensitive data)
+.env
+env
+
+
